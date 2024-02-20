@@ -16,6 +16,7 @@ public class EmployeeServiceImplementation implements EmployeeService{
 	
 	public Employee getSingleEmployee(Integer id) {
 		System.out.println("Hi");
+		System.out.println("HLO");
 		return employeeRepository.findById(id).get();
 	}
 	
