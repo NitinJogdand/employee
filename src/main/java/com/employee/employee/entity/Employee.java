@@ -33,6 +33,19 @@ public class Employee {
 		this.employeeNationality = employeeNationality;
 	}
 
+	public Employee(Integer id, String employeeName, Integer employeeAge, Long employeeMobailNumber,
+			Integer employeeSalary, String employeeCompany, String employeeLivingCity, String employeeNationality) {
+		super();
+		this.id = id;
+		this.employeeName = employeeName;
+		this.employeeAge = employeeAge;
+		this.employeeMobailNumber = employeeMobailNumber;
+		this.employeeSalary = employeeSalary;
+		this.employeeCompany = employeeCompany;
+		this.employeeLivingCity = employeeLivingCity;
+		this.employeeNationality = employeeNationality;
+	}
+
 	public Integer getId() {
 		return id;
 	}

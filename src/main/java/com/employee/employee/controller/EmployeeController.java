@@ -43,7 +43,10 @@ public class EmployeeController {
 	
 	@GetMapping("/getAll")
 	public List<Employee> getAllEmployee(){
-		return employeeService.getAllEmployee();
+		List<Employee> list = new ArrayList<>();
+		list.add(new Employee(1,"Nitin Jogdand",23,7066596024l,14570,"USIT","Pune","INDIAN"));
+		return list;
+//		return employeeService.getAllEmployee();
 	}
 	
 	@DeleteMapping("/deleteEmployee/{id}")
