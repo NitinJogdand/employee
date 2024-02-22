@@ -32,14 +32,7 @@ public class EmployeeController {
 	
 	@PostMapping("/save")
 	public String saveEmployee(@RequestBody Employee employee) {
-		List<Employee> empList = new ArrayList<>();
-		
-		empList.add(new Employee("Nitin Jogdand",23,7066596024l,14570,"USIT","Pune","INDIAN"));
-		empList.add(new Employee("Vishal Mane",21,8475988666l,16560,"Hind","Pune","INDIAN"));
-		
-		for(Employee e: empList) {
-			employeeService.saveEmployee(e);
-		}
+		System.out.println(employee);
 		return employeeService.saveEmployee(employee);
 	}
 	
