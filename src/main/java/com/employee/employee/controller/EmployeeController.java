@@ -51,6 +51,7 @@ public class EmployeeController {
 	
 	@PutMapping("/update")
 	public Employee updateEmployee(@RequestBody Employee employee) {
+		System.out.println("Data Fro Update"+employee);
 		return employeeService.updateEmployee(employee);
 	}
 }
