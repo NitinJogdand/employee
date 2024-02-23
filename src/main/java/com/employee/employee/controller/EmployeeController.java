@@ -40,7 +40,7 @@ public class EmployeeController {
 	public List<Employee> getAllEmployee(){
 //		List<Employee> list = new ArrayList<>();
 //		list.add(new Employee(1,"Nitin Jogdand",23,7066596024l,14570,"USIT","Pune","INDIAN"));
-//		return list;
+///		return list;
 		return employeeService.getAllEmployee();
 	}
 	
